@@ -6,7 +6,9 @@
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('part/head.php');?>
+<div class="wrapper">
 <?php $this->need('part/header.php'); ?>
+<div class="main">
 <div class="container">
     <article class="post-wrap page">
     <div class="post-wrap">
@@ -38,7 +40,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php endif; ?>
     </div>   
     </article>
-</div>
+</div></div></div>
 <?php $this->need('part/footer.php'); ?>
 <style>
 #links {

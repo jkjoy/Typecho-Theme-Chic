@@ -3,6 +3,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('part/head.php'); ?>
 <div class="wrapper">
 <?php $this->need('part/header.php'); ?>
+<div class="main">
 <div class="post-wrap archive">
     <h2 class="post-title">-&nbsp;<?php $this->archiveTitle(array(
             'category'  =>  _t('    %s  '),
