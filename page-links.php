@@ -40,7 +40,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php endif; ?>
     </div>   
     </article>
-</div></div></div>
+</div></div>
 <?php $this->need('part/footer.php'); ?>
 <style>
 #links {
