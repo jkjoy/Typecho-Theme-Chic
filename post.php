@@ -75,6 +75,8 @@
     </article>
     </div>
     </div>  
-<?php $this->need('part/toc.php'); ?>
+    <?php if ($this->options->showtoc): ?>
+        <?php $this->need('part/toc.php'); ?>
+<?php endif; ?>
 <?php $this->need('part/footer.php'); ?>
 

@@ -1,5 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <footer id="footer" class="footer">
+<?php echo allwords(); ?>
     <div class="copyright">
         <span>© <?php $this->options->title() ?> | Powered by <a href="https://typecho.org" target="_blank">Typecho</a> | 移植 by <a href="https://imsun.org" target="_blank">Sun</a> </span>
     </div>
