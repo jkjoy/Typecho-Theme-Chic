@@ -36,6 +36,7 @@
             </div>
             <div class="menu navbar-right">
             <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
+            <a class="menu-item"  href="<?php $this->options->posturl() ?>"><?php $this->options->postlisttittle() ?></a>
                     <?php while($pages->next()): ?>
                     <a <?php if($this->is('page', $pages->slug)): ?> <?php endif; ?>class="menu-item" href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a> 
                     <?php endwhile; ?>
@@ -56,6 +57,7 @@
             <div class="menu" id="mobile-menu">
             <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
                     <?php while($pages->next()): ?>
+                    <a class="menu-item"  href="<?php $this->options->posturl() ?>">文章列表</a>
                     <a <?php if($this->is('page', $pages->slug)): ?> <?php endif; ?>class="menu-item" href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a> 
                     <?php endwhile; ?>	
             </div>

@@ -15,8 +15,10 @@ function themeConfig($form) {
     $form->addInput($twitterurl);
     $mastodonurl = new Typecho_Widget_Helper_Form_Element_Text('mastodonurl', NULL, NULL, _t('mastodon'), _t('会在个人信息显示'));
     $form->addInput($mastodonurl);
-    $sitemapurl = new Typecho_Widget_Helper_Form_Element_Text('sitemapurl', NULL, NULL, _t('sitemap'), _t('会在页脚显示'));
-    $form->addInput($sitemapurl);
+    $posturl = new Typecho_Widget_Helper_Form_Element_Text('posturl', NULL, NULL, _t('文章列表地址'), _t('自定义文章列表的地址'));
+    $form->addInput($posturl);
+    $postlisttittle = new Typecho_Widget_Helper_Form_Element_Text('postlisttittle', NULL, NULL, _t('文章列表名称'), _t('自定义文章列表的标题'));
+    $form->addInput($postlisttittle);
     $cnavatar = new Typecho_Widget_Helper_Form_Element_Text('cnavatar', NULL, 'https://cravatar.cn/avatar/', _t('Gravatar镜像'), _t('默认https://cravatar.cn/avatar/,建议保持默认'));
     $form->addInput($cnavatar);
     $twikoo = new Typecho_Widget_Helper_Form_Element_Textarea('twikoo', NULL, NULL, _t('引用第三方评论'), _t('不填写则不显示'));
