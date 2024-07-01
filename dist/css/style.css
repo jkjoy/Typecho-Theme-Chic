@@ -862,40 +862,75 @@ html {
   }
   .post-nav:before,
   .post-nav:after {
-    content: " ";
+    content: "";
     display: table;
   }
-  .post-nav a.prev,
-  .post-nav a.next {
+  
+  .post-nav:after {
+    clear: both;
+  }
+  
+  .post-nav {
+    width: 100%; /* 确保宽度足够 */
+    overflow: hidden; /* 清除浮动 */
+  }
+  
+  .post-nav .prev,
+  .post-nav .next {
     font-weight: 600;
     font-size: 16px;
-    transition-property: transform;
-    transition-timing-function: ease-out;
-    transition-duration: 0.3s;
+    transition: transform 0.3s ease-out;
+    display: inline-block; /* 确保 span 转换为行内块级元素 */
   }
-  .post-nav a.prev {
+  
+  .post-nav .prev {
     float: left;
+    text-align: left; /* 确保文字左对齐 */
   }
-  .post-nav a.prev::before {
+  
+  .post-nav .prev::before {
     content: "<";
     margin-right: 0.5em;
   }
-  .post-nav a.prev:hover {
+  
+  .post-nav .prev:hover {
     transform: translateX(-4px);
   }
-  .post-nav a.next {
+  
+  .post-nav .next {
     float: right;
+    text-align: right; /* 确保文字右对齐 */
+    font-weight: normal; /* 确保链接文字正常粗细 */
   }
-  .post-nav a.next::after {
+  
+  .post-nav .next::after {
     content: ">";
     margin-left: 0.5em;
   }
-  .post-nav a.next:hover {
+  
+  .post-nav .next:hover {
     transform: translateX(4px);
   }
-  .post-nav a.prev::before,
-  .post-nav a.next::after {
+  
+  .post-nav .prev::before,
+  .post-nav .next::after {
     font-weight: bold;
+  }
+  
+  .post-nav .prev a,
+  .post-nav .next a {
+    text-decoration: none; /* 去掉链接下划线 */
+    color: inherit; /* 继承父级颜色 */
+    display: inline-block; /* 使 a 元素成为行内块级元素 */
+    font-weight: normal; /* 确保链接文字正常粗细 */
+  }
+  
+  .post-nav .prev a {
+    text-align: left; /* 确保 a 元素文字左对齐 */
+  }
+  
+  .post-nav .next a {
+    text-align: right; /* 确保 a 元素文字右对齐 */
   }
   .tag:not(:last-child) a::after {
     content: " / ";

@@ -12,11 +12,9 @@
                         发布日期: 
                         </span> <?php $this->date('Y-m-d'); ?><span class="dot"></span>
                         <span class="post-category">
-                         分类:
+                        所属分类:
                         </span><?php $this->category(','); ?> <span class="dot"></span>
                         <span> 浏览:</span><?php get_post_view($this) ?>次<span class="dot"></span>
-                        <span>评论:</span><a href="<?php $this->permalink() ?>#comments">
-                        <?php $this->commentsNum('0', '1', '%d '); ?></a> 
                     <?php if($this->user->hasLogin() && $this->user->pass('editor', true)): ?>
                         <span><span class="dot"></span>
                 <a href="<?php $this->options->adminUrl('write-post.php?cid=' . $this->cid); ?>" target="_blank" title="编辑文章">
@@ -59,8 +57,8 @@
             </div>
         </section>
         <section class="post-nav">
-        <a class="prev" rel="prev"><?php $this->thePrev('%s', '没有了'); ?></a>
-         <a class="next" rel="next"><?php $this->theNext('%s', '没有了'); ?></a>
+        <span class="prev" rel="prev"><?php $this->thePrev('%s', '没有了'); ?></span>
+        <span class="next" rel="next"><?php $this->theNext('%s', '没有了'); ?></span>
         </section>
     <!-- 判断如果允许评论则显示评论的div -->
 <?php if ($this->allow('comment')): ?>
