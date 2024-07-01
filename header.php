@@ -20,7 +20,6 @@
 <link rel="icon" href="<?php $this->options->icoUrl() ?>">
 <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 <script src="<?php $this->options->themeUrl('script.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('tocbot.min.js'); ?>"></script>
 <?php $this->header("generator=&template=&pingback=&wlw=&xmlrpc=&rss1=&atom=&rss2=/feed"); ?>
 <?php $this->options->addhead(); ?>
 <?php $this->header(); ?> 
