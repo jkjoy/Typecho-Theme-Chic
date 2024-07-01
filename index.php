@@ -30,7 +30,6 @@ while($this->next()):
         <span class="archive-item-date"><?php $this->date('Y-m-d'); ?></span>
     </article>
 <?php endwhile; ?>
-
 <?php if ($previousYear !== null): ?>
     </div> <!-- 关闭最后一年的 div -->
 <?php endif; ?>   
