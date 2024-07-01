@@ -2,7 +2,7 @@
 <footer id="footer" class="footer">
 <?php echo allwords(); ?>
     <div class="copyright">
-        <span>© <?php $this->options->title() ?> | Powered by <a href="https://typecho.org" target="_blank">Typecho</a> | 移植 by <a href="https://imsun.org" target="_blank">Sun</a> </span>
+        <span>© <?php $this->options->title() ?> | Powered by <a href="https://typecho.org" target="_blank">Typecho</a> | Theme by  <a href="https://github.com/Siricee" target="_blank">hexo-theme-Chic</a> | 移植 by <a href="https://imsun.org" target="_blank">Sun</a> </span>
     </div>
     <?php $this->options->tongji(); ?>   
 </footer>
