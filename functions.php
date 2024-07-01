@@ -84,7 +84,6 @@ function timer_start() {
     }
     return $r;
     }
-
 /*
  * 全站字数
  */
@@ -148,4 +147,14 @@ function allwords() {
     echo '全站共 '.$chars.' 字，写完一本我国著名的四大名著了！';}
     elseif ($chars>1000000){
     echo '全站共 '.$chars.' 字，已写一本列夫·托尔斯泰的《战争与和平》了！';}
-} 
+}
+//文章目录功能-给文章内标题加上id
+function addHeaderLinks($text)
+{
+    return preg_replace_callback('/<h([1-6])>(.*?)<\/h\1>/', function ($matches) {
+        $level = $matches[1];
+        $title = $matches[2];
+        $id = htmlspecialchars(strip_tags($title), ENT_QUOTES, 'UTF-8');
+        return sprintf('<h%s id="%s"><a href="#%s" class="headerlink" title="%s">%s</a></h%s>', $level, $id, $id, $title, $title, $level);
+    }, $text);
+}

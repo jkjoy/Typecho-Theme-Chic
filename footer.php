@@ -2,10 +2,22 @@
 <footer id="footer" class="footer">
 <?php echo allwords(); ?>
     <div class="copyright">
-        <span>© <?php $this->options->title() ?> | Powered by <a href="https://typecho.org" target="_blank">Typecho</a> | Theme by  <a href="https://github.com/Siricee" target="_blank">hexo-theme-Chic</a> | 移植 by <a href="https://imsun.org" target="_blank">Sun</a> </span>
+        <span>© <?php $this->options->title() ?> | Powered by <a href="https://typecho.org" target="_blank">Typecho</a> &  <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a>| Theme by  <a href="https://imsun.org" target="_blank">Sun</a> </span>
     </div>
     <?php $this->options->tongji(); ?>   
 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var defaultLanguage = 'javascript'; // 设置默认语言
+    document.querySelectorAll('pre code').forEach(function (block) {
+      if (!block.classList.length) {
+        block.classList.add('language-' + defaultLanguage);
+      }
+    });
+    Prism.highlightAll();
+  });
+</script>
+
 </div>
 </body>
 </html>

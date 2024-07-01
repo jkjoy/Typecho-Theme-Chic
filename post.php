@@ -2,6 +2,9 @@
 <?php $this->need('header.php'); ?>
 <div class="main">
 <div class="container">
+<?php if ($this->options->showtoc): ?>
+        <?php $this->need('toc.php'); ?>
+    <?php endif; ?>
     <article class="post-wrap">
         <header class="post-header">
             <h1 class="post-title"><?php $this->title() ?></h1>
@@ -12,9 +15,8 @@
                         <span class="post-category">
                         所属分类:
                         </span><?php $this->category(','); ?> <span class="dot"></span>
-                        <span> 浏览:</span><?php get_post_view($this) ?>次<span class="dot"></span>
+                        <span> 浏览:</span><?php get_post_view($this) ?>次 
                     <?php if($this->user->hasLogin() && $this->user->pass('editor', true)): ?>
-                        <span><span class="dot"></span>
                 <a href="<?php $this->options->adminUrl('write-post.php?cid=' . $this->cid); ?>" target="_blank" title="编辑文章">
                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16">
                 <path 
@@ -24,7 +26,7 @@
                 </div>
         </header>
         <div class="post-content">
-        <?php $this->content(); ?>
+        <?php $content = $this->content; echo addHeaderLinks($content); ?>
         </div>
             <section class="post-copyright">
                     <p class="copyright-item">
@@ -71,8 +73,5 @@
     </article>
     </div>
     </div>  
-    <?php if ($this->options->showtoc): ?>
-        <?php $this->need('toc.php'); ?>
-<?php endif; ?>
 <?php $this->need('footer.php'); ?>
 
