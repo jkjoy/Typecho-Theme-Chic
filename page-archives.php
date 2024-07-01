@@ -5,9 +5,7 @@
  * @package custom
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<?php $this->need('part/head.php'); ?>
-<div class="wrapper">
-<?php $this->need('part/header.php'); ?>
+<?php $this->need('header.php'); ?>
 <div class="main">
 <div class="post-wrap archive">
     <h2 class="post-title">-&nbsp;&nbsp;<?php $this->title() ?>&nbsp;&nbsp;-</h2>
@@ -48,5 +46,5 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 </div>
 <br>  
 
-<?php $this->need('part/footer.php'); ?>
+<?php $this->need('footer.php'); ?>
  

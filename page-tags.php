@@ -5,9 +5,7 @@
  * @package custom
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<?php $this->need('part/head.php'); ?>
-<div class="wrapper">
-<?php $this->need('part/header.php'); ?>
+<?php $this->need('header.php'); ?>
 <div class="main">
 <div class="container">
 <div class="post-wrap tags">
@@ -23,4 +21,4 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
                             <p class="text-center pb-2"><?php _e('没有任何标签'); ?></p>
                         <?php endif; ?>
 </div></div></div>
-<?php $this->need('part/footer.php'); ?>
+<?php $this->need('footer.php'); ?>

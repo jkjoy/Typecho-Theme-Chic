@@ -1,7 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<?php $this->need('part/head.php'); ?>
-<div class="wrapper">
-<?php $this->need('part/header.php'); ?>
+<?php $this->need('header.php'); ?>
 <div class="main">
 <div class="container">
     <article class="post-wrap">
@@ -74,7 +72,7 @@
     </div>
     </div>  
     <?php if ($this->options->showtoc): ?>
-        <?php $this->need('part/toc.php'); ?>
+        <?php $this->need('toc.php'); ?>
 <?php endif; ?>
-<?php $this->need('part/footer.php'); ?>
+<?php $this->need('footer.php'); ?>
 
