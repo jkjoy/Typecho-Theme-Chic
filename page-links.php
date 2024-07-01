@@ -27,6 +27,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
             </div></div>
             ');
     ?>
+            </div> </div> </div>
     </section>
 <!-- 判断如果允许评论则显示评论的div -->
 <?php if ($this->allow('comment')): ?>
@@ -47,7 +48,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
   padding-left: 3.5em;
 }
 .container .main-inner {
-  width: 1100px;
+  width: 100%;
 }
 .links-content {
   margin-top: 1rem;
@@ -58,8 +59,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
   clear: both;
 }
 .card {
-  width: 45%;
-  font-size: 1.5rem;
+  width: 40%;
+  font-size: 1rem;
   padding: 20px 10px;
   border-radius: 4px;
   transition-duration: 0.15s;
@@ -80,14 +81,15 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
   border: none;
 }
 .card .ava {
-  width: 4rem !important;
-  height: 4rem !important;
-  margin: 0 !important;
-  margin-right: 1em !important;
+  width: 64px;
+  height: 48px;
+  margin: 0;
+  margin-right: 1em;
   border-radius: 50%;
   display: block;
   transition: all 0.75s;
 }
+
 .card .ava:hover {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -115,7 +117,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 .card .card-header .info {
   font-style: normal;
   color: #a3a3a3;
-  font-size: 14px;
+  font-size: 12px;
   min-width: 0;
   word-break: break-word;
   overflow: hidden;
