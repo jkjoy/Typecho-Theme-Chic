@@ -14,7 +14,7 @@
                 </g>
             </svg><?php $this->commentsNum(_t('0'), _t('1'), _t('%d')); ?>
         </h3>
-        <ol class="commentlist sulliComment--list"></ol>
+        <ol class="commentlist"></ol>
         <?php if ($comments->have()): ?>
         <?php $comments->listComments(); ?>
     <?php

@@ -1263,10 +1263,6 @@ html {
   width: auto
 }
 
-.comment-form .submit:hover {
-  background-color: var(--farallon-text-light)
-}
-
 .comment-form p {
   margin-bottom: 15px
 }
@@ -1278,7 +1274,6 @@ html {
 .comment-form .comment-notes,
 .comment-form .logged-in-as {
   font-size: 12px;
-  color: var(--farallon-text-gray)
 }
 
 .comment-reply-title {
@@ -1295,7 +1290,7 @@ html {
 }
 
 .commentlist {
-  border-top: 1px solid var(--farallon-border-color-light);
+  border-top: 1px solid var(--theme);
   list-style: none;
   padding-top: 10px
 }
@@ -1307,7 +1302,6 @@ html {
 .commentlist .comment-respond {
   margin-top: 20px;
   padding: 20px;
-  background-color: var(--farallon-background-gray);
   border-radius: 5px
 }
 
@@ -1326,7 +1320,7 @@ html {
 }
 
 .comment.parent {
-  border-bottom: 1px solid var(--farallon-border-color-light)
+  border-bottom: 1px solid var(--theme)
 }
 
 .comment.parent:last-child {
@@ -1347,7 +1341,7 @@ html {
 }
 
 .comment-body:hover .avatar {
-  box-shadow: 0 0 3px 0 var(--farallon-hover-color)
+  box-shadow: 0 0 3px 0
 }
 
 .comment--avatar {
@@ -1367,21 +1361,11 @@ html {
 }
 
 .comment--author .comment-reply-link svg {
-  fill: var(--farallon-text-gray);
   width: 15px;
   height: 15px
 }
 
-.comment--author .comment-reply-link:hover svg {
-  fill: var(--farallon-hover-color)
-}
-
-.comment--author a {
-  color: var(--farallon-main-color)
-}
-
 .comment--author a:hover {
-  color: var(--farallon-hover-color);
   text-decoration: underline
 }
 
@@ -1389,10 +1373,6 @@ html {
   display: flex;
   align-items: center;
   flex: auto
-}
-
-.comment--time {
-  color: var(--farallon-text-light)
 }
 
 .comment-meta {
@@ -1413,15 +1393,10 @@ div.cancel-comment-reply.cancel-comment-reply-link {
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
   white-space: normal !important;
-  color: var(--farallon-text-light)
 }
 
 .comment-content a {
   text-decoration: underline
-}
-
-.comment-content a:hover {
-  color: var(--farallon-hover-color)
 }
 
 .children {
@@ -1482,7 +1457,6 @@ div.cancel-comment-reply.cancel-comment-reply-link {
   margin-right: 5px;
   position: relative;
   transform: translate3d(0, 1px, 0);
-  fill: var(--farallon-text-color)
 }
 
 .comment-respond {
@@ -1495,7 +1469,6 @@ div.cancel-comment-reply.cancel-comment-reply-link {
 
 .comment-form-cookies-consent label {
   font-size: 14px;
-  color: var(--farallon-text-gray);
   display: flex;
   align-items: center;
   position: relative
@@ -1519,7 +1492,6 @@ div.cancel-comment-reply.cancel-comment-reply-link {
 }
 
 .comment-form-cookies-consent input:checked+label::after {
-  background-color: var(--farallon-main-color);
   border-radius: 100%;
   content: "";
   position: absolute;
