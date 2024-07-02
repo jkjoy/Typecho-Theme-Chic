@@ -97,60 +97,40 @@ function allwords() {
     $select = $db ->select('text')->from('table.contents');//如果只要统计文章总字数不要统计单页的话可在后面加入->where('type = ?','post')
     $rows = $db->fetchAll($select);
     foreach ($rows as $row) { $chars += mb_strlen(trim($row['text']), 'UTF-8'); }
-    if($chars<50000){
-    echo '全站共 '.$chars.' 字,还在努力更新中,加油！加油啦！';}
-    elseif ($chars<70000 && $chars>50000){
-    echo '全站共 '.$chars.' 字，写完一本埃克苏佩里的《小王子》了！';}
-    elseif ($chars<90000 && $chars>70000){
-    echo '全站共 '.$chars.' 字，写完一本鲁迅的《呐喊》了！';}
-    elseif ($chars<100000 && $chars>90000){
-    echo '全站共 '.$chars.' 字，写完一本林海音的《城南旧事》了！';}
-    elseif ($chars<110000 && $chars>100000){
-    echo '全站共 '.$chars.' 字，写完一本马克·吐温的《王子与乞丐》了！';}
-    elseif ($chars<120000 && $chars>110000){
-    echo '全站共 '.$chars.' 字，写完一本鲁迅的《彷徨》了！';}
-    elseif ($chars<130000 && $chars>120000){
-    echo '全站共 '.$chars.' 字，写完一本余华的《活着》了！';}
-    elseif ($chars<140000 && $chars>130000){
-    echo '全站共 '.$chars.' 字，写完一本曹禺的《雷雨》了！';}
-    elseif ($chars<150000 && $chars>140000){
-    echo '全站共 '.$chars.' 字，写完一本史铁生的《宿命的写作》了！';}
-    elseif ($chars<160000 && $chars>150000){
-    echo '全站共 '.$chars.' 字，写完一本伯内特的《秘密花园》了！';}
-    elseif ($chars<170000 && $chars>160000){
-    echo '全站共 '.$chars.' 字，写完一本曹禺的《日出》了！';}
-    elseif ($chars<180000 && $chars>170000){
-    echo '全站共 '.$chars.' 字，写完一本马克·吐温的《汤姆·索亚历险记》了！';}
-    elseif ($chars<190000 && $chars>180000){
-    echo '全站共 '.$chars.' 字，写完一本沈从文的《边城》了！';}
-    elseif ($chars<200000 && $chars>190000){
-    echo '全站共 '.$chars.' 字，写完一本亚米契斯的《爱的教育》了！';}
-    elseif ($chars<210000 && $chars>200000){
-    echo '全站共 '.$chars.' 字，写完一本巴金的《寒夜》了！';}
-    elseif ($chars<220000 && $chars>210000){
-    echo '全站共 '.$chars.' 字，写完一本东野圭吾的《解忧杂货店》了！';}
-    elseif ($chars<230000 && $chars>220000){
-    echo '全站共 '.$chars.' 字，写完一本莫泊桑的《一生》了！';}
-    elseif ($chars<250000 && $chars>230000){
-    echo '全站共 '.$chars.' 字，写完一本简·奥斯汀的《傲慢与偏见》了！';}
-    elseif ($chars<280000 && $chars>250000){
-    echo '全站共 '.$chars.' 字，写完一本钱钟书的《围城》了！';}
-    elseif ($chars<300000 && $chars>280000){
-    echo '全站共 '.$chars.' 字，写完一本张炜的《古船》了！';}
-    elseif ($chars<310000 && $chars>300000){
-    echo '全站共 '.$chars.' 字，写完一本茅盾的《子夜》了！';}
-    elseif ($chars<320000 && $chars>310000){
-    echo '全站共 '.$chars.' 字，写完一本阿来的《尘埃落定》了！';}
-    elseif ($chars<340000 && $chars>320000){
-    echo '全站共 '.$chars.' 字，写完一本艾米莉·勃朗特的《呼啸山庄》了！';}
-    elseif ($chars<350000 && $chars>340000){
-    echo '全站共 '.$chars.' 字，写完一本雨果的《巴黎圣母院》了！';}
-    elseif ($chars<400000 && $chars>350000){
-    echo '全站共 '.$chars.' 字，写完一本东野圭吾的《白夜行》了！';}
-    elseif ($chars<1000000 && $chars>400000){
-    echo '全站共 '.$chars.' 字，写完一本我国著名的四大名著了！';}
-    elseif ($chars>1000000){
-    echo '全站共 '.$chars.' 字，已写一本列夫·托尔斯泰的《战争与和平》了！';}
+    if($chars<15000){
+    echo '全站共 '.$chars.' 字,还在努力更新中';}
+    elseif ($chars<35000 && $chars>15000){
+    echo '全站共 '.$chars.' 字，可以写完一部《越女剑》了！';}
+    elseif ($chars<80000 && $chars>35000){
+    echo '全站共 '.$chars.' 字，已经写完一部《鸳鸯刀》了！';}
+    elseif ($chars<130000 && $chars>80000){
+    echo '全站共 '.$chars.' 字，写完一本《白马啸西风》了！';}
+    elseif ($chars<230000 && $chars>130000){
+    echo '全站共 '.$chars.' 字，足以写完《雪山飞狐》了！';}
+    elseif ($chars<360000 && $chars>230000){
+    echo '全站共 '.$chars.' 字，写完《连城诀》了！';}
+    elseif ($chars<420000 && $chars>360000){
+    echo '全站共 '.$chars.' 字，超越《侠客行》了！';}
+    elseif ($chars<440000 && $chars>420000){
+    echo '全站共 '.$chars.' 字，写完一部《碧血剑》了！';}
+    elseif ($chars<550000 && $chars>440000){
+    echo '全站共 '.$chars.' 字，可以写完《飞狐外传》了！';}
+    elseif ($chars<900000 && $chars>550000){
+    echo '全站共 '.$chars.' 字，可以写完一部《书剑恩仇录》了！';}
+    elseif ($chars<1000000 && $chars>900000){
+    echo '全站共 '.$chars.' 字，接近《射雕英雄传》了！';}
+    elseif ($chars<1050000 && $chars>1000000){
+    echo '全站共 '.$chars.' 字，超越《神雕侠侣》指日可待了！';}
+    elseif ($chars<1060000 && $chars>1050000){
+    echo '全站共 '.$chars.' 字，写完《倚天屠龙记》了！';}
+    elseif ($chars<1250000 && $chars>1060000){
+    echo '全站共 '.$chars.' 字，写完《笑傲江湖》了！';}
+    elseif ($chars<1300000 && $chars>1250000){
+    echo '全站共 '.$chars.' 字，写完《鹿鼎记》了！';}
+    elseif ($chars<1400000 && $chars>1300000){
+    echo '全站共 '.$chars.' 字，写完《天龙八部》了！';}
+    elseif ($chars>1400000){
+    echo '全站共 '.$chars.' 字，足以名震江湖！';}
 }
 //文章目录功能-给文章内标题加上id
 function addHeaderLinks($text)
