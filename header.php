@@ -22,8 +22,6 @@
 <script src="<?php $this->options->themeUrl('script.js'); ?>"></script>
 <?php $this->header("generator=&template=&pingback=&wlw=&xmlrpc=&rss1=&atom=&rss2=/feed"); ?>
 <?php $this->options->addhead(); ?>
-<script src="//cdnjs.sgcd.net/code-highlight/js/prism.js"></script>
-<link rel="stylesheet" href="//cdnjs.sgcd.net/code-highlight/css/prism.css"  />
 <?php $this->header(); ?> 
 </head>
 <body>

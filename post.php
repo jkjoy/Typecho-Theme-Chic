@@ -1,5 +1,9 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
+<?php if ($this->options->showprism): ?>
+    <script src="<?php $this->options->themeUrl('prism.js'); ?>"></script>
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('prism.css'); ?>"  />
+<?php endif; ?>
 <div class="main">
 <div class="container">
 <?php if ($this->options->showtoc): ?>

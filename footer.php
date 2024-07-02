@@ -6,7 +6,8 @@
     </div>
     <?php $this->options->tongji(); ?>   
 </footer>
-<script>
+<?php if ($this->options->showprism): ?>
+  <script>
   document.addEventListener('DOMContentLoaded', function () {
     var defaultLanguage = 'javascript'; // 设置默认语言
     document.querySelectorAll('pre code').forEach(function (block) {
@@ -17,7 +18,7 @@
     Prism.highlightAll();
   });
 </script>
-
+<?php endif; ?>
 </div>
 </body>
 </html>

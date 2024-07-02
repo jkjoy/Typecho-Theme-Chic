@@ -35,9 +35,7 @@
             );
         ?>
         <?php else: ?>
-       
             <center><h3><?php _e('暂无评论'); ?></h3></center>
-
         <?php endif; ?>
     <div id="<?php $this->respondId(); ?>" class="comment-respond">
         <div class="cancel-comment-reply cancel-comment-reply-link"><?php $comments->cancelReply(); ?></div>
