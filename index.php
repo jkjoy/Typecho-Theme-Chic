@@ -3,8 +3,8 @@
  * 移植自Hexo主题 Chic  
  * @package Chic
  * @author  老孙 
- * @version 1.0.1
- * @link https://imsun.org
+ * @version 1.0.2
+ * @link https://www.imsun.org
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
@@ -52,4 +52,21 @@ while($this->next()):
             );
         ?>   
 </div>  
+<script>
+    function truncateTitle() {
+        var links = document.getElementsByClassName('archive-item-link');
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if (width < 420) {
+            for (var i = 0; i < links.length; i++) {
+                var title = links[i].innerHTML;
+                if (title.length > 20) {
+                    links[i].innerHTML = title.substring(0, 20) + '...';
+                }
+            }
+        }
+    }
+
+    window.addEventListener('resize', truncateTitle);
+    truncateTitle();
+</script>
 <?php $this->need('footer.php'); ?>
