@@ -68,7 +68,7 @@
     </div>
     <?php endif; ?>
     <?php else: ?>
-    <?php _e(''); ?>
+    
     <?php endif; ?>   
     <?php $this->options->twikoo(); ?>
 </div>
@@ -100,7 +100,6 @@ function threadedComments($comments, $options) {
                         <?php else: ?>
                             <?php echo $comments->gravatar('40', ''); ?> 
                         <?php endif; ?>
-                    
                 </div>
                 <div class="comment--meta">
                     <div class="comment--author"><?php echo $comments->author; ?><span class="dot"></span>

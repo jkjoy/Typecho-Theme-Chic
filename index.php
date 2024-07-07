@@ -1,6 +1,6 @@
 <?php 
 /**
- * 移植自Hexo主题 Chic  
+ * 移植自 Hexo主题 Chic  
  * @package Chic
  * @author  老孙 
  * @version 1.0.2
