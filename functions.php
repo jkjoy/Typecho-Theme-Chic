@@ -23,6 +23,8 @@ function themeConfig($form) {
     $form->addInput($postlisttittle);
     $cnavatar = new Typecho_Widget_Helper_Form_Element_Text('cnavatar', NULL, 'https://cravatar.cn/avatar/', _t('Gravatar镜像'), _t('默认https://cravatar.cn/avatar/,建议保持默认'));
     $form->addInput($cnavatar);
+    $moresns= new Typecho_Widget_Helper_Form_Element_Textarea('moresns', NULL, NULL, _t('更多的SNS'), _t('支持HTML,请参考文档'));
+    $form->addInput($moresns);
     $twikoo = new Typecho_Widget_Helper_Form_Element_Textarea('twikoo', NULL, NULL, _t('引用第三方评论'), _t('不填写则不显示'));
     $form->addInput($twikoo);
     $addhead = new Typecho_Widget_Helper_Form_Element_Textarea('addhead', NULL, NULL, _t('添加head'), _t('支持HTML'));

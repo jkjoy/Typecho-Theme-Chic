@@ -6,7 +6,17 @@
 
 评论列表参考`wordpress`主题`farallon` 
 
+## 使用
 
+更多SNS,按以下格式
+```
+<a class="link-item" href="SNS地址" target="_blank"><svg> svg </svg> </a>
+<a class="link-item" href="SNS地址" target="_blank"><svg> svg </svg> </a>
+<a class="link-item" href="SNS地址" target="_blank"><svg> svg </svg> </a>
+<a class="link-item" href="SNS地址" target="_blank"><svg> svg </svg> </a>
+<a class="link-item" href="SNS地址" target="_blank"><svg> svg </svg> </a>
+
+```
 
 
 ## 感谢
