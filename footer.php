@@ -7,6 +7,8 @@
     <?php $this->options->tongji(); ?>   
 </footer>
 <?php if ($this->options->showprism): ?>
+  <script src="<?php $this->options->themeUrl('prism.js'); ?>"></script>
+  <link rel="stylesheet" href="<?php $this->options->themeUrl('prism.css'); ?>"  />
   <script>
   document.addEventListener('DOMContentLoaded', function () {
     var defaultLanguage = 'javascript'; // 设置默认语言
