@@ -1517,3 +1517,8 @@ ul.comment-list {
 ol.comment-list li, ul.comment-list li {
   list-style-type: none;
 }
+
+/* 文章中强制换行 */
+article p {
+  word-wrap:break-word;
+}
