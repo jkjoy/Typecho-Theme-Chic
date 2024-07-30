@@ -145,6 +145,6 @@ function addHeaderLinks($text)
         $level = $matches[1];
         $title = $matches[2];
         $id = htmlspecialchars(strip_tags($title), ENT_QUOTES, 'UTF-8');
-        return sprintf('<h%s id="%s"><a href="#%s" class="headerlink" title="%s">%s</a></h%s>', $level, $id, $id, $title, $title, $level);
+        return sprintf('<h%s id="%s"><a href="#%s" class="headerlink" title="%s"></a>%s</h%s>', $level, $id, $id, $title, $title, $level);
     }, $text);
 }

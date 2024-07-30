@@ -3,7 +3,7 @@
  * 移植自 Hexo主题 Chic  
  * @package Chic
  * @author  老孙 
- * @version 1.0.3
+ * @version 1.0.4
  * @link https://www.imsun.org
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
